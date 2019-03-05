@@ -1,0 +1,156 @@
+@import "./common/var.scss";
+@import "./mixins/mixins.scss";
+
+[class*="df-col-"] {
+  float: left;
+  box-sizing: border-box;
+}
+
+.df-col-0 {
+  display: none;
+}
+
+@for $i from 0 through 24 {
+  .df-col-#{$i} {
+    width: (1 / 24 * $i * 100) * 1%;
+  }
+
+  .df-col-offset-#{$i} {
+    margin-left: (1 / 24 * $i * 100) * 1%;
+  }
+
+  .df-col-pull-#{$i} {
+    position: relative;
+    right: (1 / 24 * $i * 100) * 1%;
+  }
+
+  .df-col-push-#{$i} {
+    position: relative;
+    left: (1 / 24 * $i * 100) * 1%;
+  }
+}
+
+@include res(xs) {
+  .df-col-xs-0 {
+    display: none;
+  }
+  @for $i from 0 through 24 {
+    .df-col-xs-#{$i} {
+      width: (1 / 24 * $i * 100) * 1%;
+    }
+
+    .df-col-xs-offset-#{$i} {
+      margin-left: (1 / 24 * $i * 100) * 1%;
+    }
+
+    .df-col-xs-pull-#{$i} {
+      position: relative;
+      right: (1 / 24 * $i * 100) * 1%;
+    }
+
+    .df-col-xs-push-#{$i} {
+      position: relative;
+      left: (1 / 24 * $i * 100) * 1%;
+    }
+  }
+}
+
+@include res(sm) {
+  .df-col-sm-0 {
+    display: none;
+  }
+  @for $i from 0 through 24 {
+    .df-col-sm-#{$i} {
+      width: (1 / 24 * $i * 100) * 1%;
+    }
+
+    .df-col-sm-offset-#{$i} {
+      margin-left: (1 / 24 * $i * 100) * 1%;
+    }
+
+    .df-col-sm-pull-#{$i} {
+      position: relative;
+      right: (1 / 24 * $i * 100) * 1%;
+    }
+
+    .df-col-sm-push-#{$i} {
+      position: relative;
+      left: (1 / 24 * $i * 100) * 1%;
+    }
+  }
+}
+
+@include res(md) {
+  .df-col-md-0 {
+    display: none;
+  }
+  @for $i from 0 through 24 {
+    .df-col-md-#{$i} {
+      width: (1 / 24 * $i * 100) * 1%;
+    }
+
+    .df-col-md-offset-#{$i} {
+      margin-left: (1 / 24 * $i * 100) * 1%;
+    }
+
+    .df-col-md-pull-#{$i} {
+      position: relative;
+      right: (1 / 24 * $i * 100) * 1%;
+    }
+
+    .df-col-md-push-#{$i} {
+      position: relative;
+      left: (1 / 24 * $i * 100) * 1%;
+    }
+  }
+}
+
+@include res(lg) {
+  .df-col-lg-0 {
+    display: none;
+  }
+  @for $i from 0 through 24 {
+    .df-col-lg-#{$i} {
+      width: (1 / 24 * $i * 100) * 1%;
+    }
+
+    .df-col-lg-offset-#{$i} {
+      margin-left: (1 / 24 * $i * 100) * 1%;
+    }
+
+    .df-col-lg-pull-#{$i} {
+      position: relative;
+      right: (1 / 24 * $i * 100) * 1%;
+    }
+
+    .df-col-lg-push-#{$i} {
+      position: relative;
+      left: (1 / 24 * $i * 100) * 1%;
+    }
+  }
+}
+
+@include res(xl) {
+  .df-col-xl-0 {
+    display: none;
+  }
+  @for $i from 0 through 24 {
+    .df-col-xl-#{$i} {
+      width: (1 / 24 * $i * 100) * 1%;
+    }
+
+    .df-col-xl-offset-#{$i} {
+      margin-left: (1 / 24 * $i * 100) * 1%;
+    }
+
+    .df-col-xl-pull-#{$i} {
+      position: relative;
+      right: (1 / 24 * $i * 100) * 1%;
+    }
+
+    .df-col-xl-push-#{$i} {
+      position: relative;
+      left: (1 / 24 * $i * 100) * 1%;
+    }
+  }
+}
